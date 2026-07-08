@@ -8,6 +8,7 @@
   `define CFS_CTRL_V
 
   module cfs_ctrl #(
+    
     parameter ALGN_DATA_WIDTH = 32,
 
     localparam int unsigned ALGN_OFFSET_WIDTH = ALGN_DATA_WIDTH <= 8 ? 1 : $clog2(ALGN_DATA_WIDTH/8),
